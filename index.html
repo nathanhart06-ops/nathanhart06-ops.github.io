@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Primal: every game, one launcher</title>
+<meta name="description" content="Primal is a free game launcher for Windows. Play Steam, Epic, GOG, Xbox, EA, Ubisoft and Battle.net games from one place, with mods, cloud saves, clips, an in-game overlay, achievements and voice parties built in.">
+<meta property="og:title" content="Primal: every game, one launcher">
+<meta property="og:description" content="Steam, Epic, GOG, Xbox, EA, Ubisoft and Battle.net in one launcher, with mods, cloud saves, clips, an overlay and voice parties built in. Free for Windows.">
+<meta property="og:image" content="assets/home.jpg">
+<meta name="theme-color" content="#07070c">
+<link rel="icon" href="assets/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Unbounded:wght@500;700;900&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<canvas id="bg" aria-hidden="true"></canvas>
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="nav">
+  <a class="brand" href="#top"><img src="assets/icon.png" alt=""><span>PRIMAL</span></a>
+  <nav class="links">
+    <a href="#features">Features</a>
+    <a href="#tour">Tour</a>
+    <a href="#engine">Capture engine</a>
+    <a href="#faq">FAQ</a>
+  </nav>
+  <a class="btn btn-sm dl-link" href="https://github.com/nathanhart06-ops/primal-releases/releases/latest"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>Download</a>
+</header>
+
+<main id="top">
+  <!-- ───────── hero ───────── -->
+  <section class="hero">
+    <div class="hero-copy">
+      <span class="pill reveal"><i></i><b class="ver">New</b> Primal Capture Engine is here</span>
+      <h1 class="reveal"><span class="line">Every game.</span><span class="line grad">One launcher.</span></h1>
+      <p class="lead reveal">Steam, Epic, GOG, Xbox, EA, Ubisoft and Battle.net games in one fast, beautiful library. Your games start straight from Primal, and mods, cloud saves, clips, an in-game overlay and voice chat are built in. Free for Windows.</p>
+      <div class="cta reveal">
+        <a class="btn btn-xl dl-link" href="https://github.com/nathanhart06-ops/primal-releases/releases/latest">
+          <svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+          <span><b>Download for Windows</b><small class="dl-meta">Windows 10 &amp; 11 · 64-bit</small></span>
+        </a>
+        <a class="btn btn-ghost btn-xl" href="#tour"><svg viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor" stroke="none"/></svg><span><b>Take the tour</b></span></a>
+      </div>
+      <ul class="trust reveal">
+        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Free, no ads</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Updates itself</li>
+        <li><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Anti-cheat safe</li>
+      </ul>
+    </div>
+    <div class="hero-shot reveal" id="tilt">
+      <div class="shot-glow"></div>
+      <div class="window">
+        <div class="win-bar"><i></i><i></i><i></i><span>Primal</span></div>
+        <img src="assets/home.jpg" alt="Primal's Home tab showing the game library" fetchpriority="high">
+      </div>
+      <img class="float f1" src="assets/overlay.png" alt="Primal's in-game overlay showing FPS, CPU and GPU">
+      <div class="float f2 chip-card"><span class="dot"></span><div><b>Clip saved</b><small>0.14 s · NVENC · 3440×1440</small></div></div>
+    </div>
+  </section>
+
+  <!-- ───────── stores marquee ───────── -->
+  <section class="stores" aria-label="Supported stores">
+    <p>Your whole library, from every store</p>
+    <div class="marquee"><div class="track">
+      <span style="--c:#66c0f4">Steam</span><span style="--c:#e6e6f0">Epic Games</span><span style="--c:#b46cff">GOG</span><span style="--c:#16c60c">Xbox &amp; PC Game Pass</span>
+      <span style="--c:#ff4b4b">EA app</span><span style="--c:#3d8bff">Ubisoft Connect</span><span style="--c:#14a0ff">Battle.net</span><span style="--c:#ff4655">Riot</span><span style="--c:#fcaf17">Rockstar</span><span style="--c:#da8e35">Nexus Mods</span><span style="--c:#23c4f8">Thunderstore</span>
+      <span style="--c:#66c0f4">Steam</span><span style="--c:#e6e6f0">Epic Games</span><span style="--c:#b46cff">GOG</span><span style="--c:#16c60c">Xbox &amp; PC Game Pass</span>
+      <span style="--c:#ff4b4b">EA app</span><span style="--c:#3d8bff">Ubisoft Connect</span><span style="--c:#14a0ff">Battle.net</span><span style="--c:#ff4655">Riot</span><span style="--c:#fcaf17">Rockstar</span><span style="--c:#da8e35">Nexus Mods</span><span style="--c:#23c4f8">Thunderstore</span>
+    </div></div>
+  </section>
+
+  <!-- ───────── numbers ───────── -->
+  <section class="numbers">
+    <div class="num reveal"><b data-count="9">0</b><span>stores in one library</span></div>
+    <div class="num reveal"><b data-count="21800" data-suffix="+">0</b><span>games with cloud saves</span></div>
+    <div class="num reveal"><b data-count="5569">0</b><span>games moddable from Nexus</span></div>
+    <div class="num reveal"><b data-count="515">0</b><span>PC Game Pass games to browse</span></div>
+  </section>
+
+  <!-- ───────── features ───────── -->
+  <section class="features" id="features">
+    <div class="sec-head reveal">
+      <span class="kicker">Everything built in</span>
+      <h2>One app instead of nine.</h2>
+      <p>Primal does what your launchers, mod managers, recorders and overlays do, in one place that looks the part.</p>
+    </div>
+    <div class="bento">
+      <article class="card big reveal" style="--c:#8b5cf6">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M13 3L5 13.5h6L10 21l8-10.5h-6z"/></svg></div>
+        <h3>Press Play. That's it.</h3>
+        <p>Games start straight from Primal: no Steam, Epic or Xbox window popping up first. Anti-cheat games go through their own protected launcher automatically, so nothing gets flagged.</p>
+        <img src="assets/game.jpg" alt="A game page in Primal" loading="lazy">
+      </article>
+      <article class="card reveal" style="--c:#66c0f4">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg></div>
+        <h3>Download from any store</h3>
+        <p>Install Steam, Epic and GOG games from inside Primal, browse PC Game Pass, and grab EA, Ubisoft and Battle.net games with live progress.</p>
+      </article>
+      <article class="card reveal" style="--c:#da8e35">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M14.5 6.5a4 4 0 0 0 5.2 5.2l-8.4 8.4a2.3 2.3 0 0 1-3.3-3.3l8.4-8.4"/><path d="M14.5 6.5L17 4l3 3-2.5 2.5"/></svg></div>
+        <h3>A real mod manager</h3>
+        <p>Nexus Mods and Thunderstore built in, with one-click installs, FOMOD installers, load order, conflict detection, profiles and safe uninstall.</p>
+      </article>
+      <article class="card reveal" style="--c:#4da3ff">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M7 18.5a4.5 4.5 0 0 1-.6-9A6 6 0 0 1 18 10.5a4 4 0 0 1-.5 8z"/><path d="M12 11.5v5M9.8 13.7l2.2-2.2 2.2 2.2"/></svg></div>
+        <h3>Cloud saves for every game</h3>
+        <p>Knows where 21,800+ games keep their saves. Backs them up after every session with full version history, and syncs between your PCs.</p>
+      </article>
+      <article class="card reveal" style="--c:#ffc94d">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M8 4h8v5a4 4 0 0 1-8 0z"/><path d="M8 6H4.5v1.5A3.5 3.5 0 0 0 8 11M16 6h3.5v1.5A3.5 3.5 0 0 1 16 11M12 13v3.5M8.5 20h7l-.8-3.5H9.3z"/></svg></div>
+        <h3>Every achievement</h3>
+        <p>Steam and Xbox achievements in one place, with rarity, completion tracking and a leaderboard against your friends.</p>
+      </article>
+      <article class="card wide reveal" style="--c:#ec4899">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M4.5 17a8.5 8.5 0 1 1 15 0"/><path d="M12 14l4-5"/><circle cx="12" cy="14" r="1.4" fill="currentColor"/></svg></div>
+        <h3>Overlay &amp; optimizer</h3>
+        <p>An in-game overlay with FPS, 1% lows, CPU, GPU, temperatures and VRAM, plus the best settings for each game on your exact PC, including when to turn on DLSS or FSR.</p>
+        <img src="assets/performance.jpg" alt="Primal's Performance tab" loading="lazy">
+      </article>
+      <article class="card reveal" style="--c:#3ddc84">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M4.5 15v-3a7.5 7.5 0 0 1 15 0v3"/><rect x="3.5" y="13.5" width="4" height="6" rx="1.6"/><rect x="16.5" y="13.5" width="4" height="6" rx="1.6"/></svg></div>
+        <h3>Friends &amp; voice parties</h3>
+        <p>Your own friends list with chat, game invites and an activity feed. Jump into a voice party with push-to-talk that works mid-game.</p>
+      </article>
+      <article class="card reveal" style="--c:#ff5a6a">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14" rx="2.5"/><path d="M10 9.5v5l4.5-2.5z" fill="currentColor"/></svg></div>
+        <h3>Clips with one key</h3>
+        <p>Press Alt+F10 and the last 30 seconds are saved. Trim it, then send it to a friend, all without leaving Primal.</p>
+      </article>
+      <article class="card reveal" style="--c:#23c4f8">
+        <div class="card-ic"><svg viewBox="0 0 24 24"><path d="M7 8h10a4 4 0 0 1 4 4.2l-.3 3.3a2.6 2.6 0 0 1-4.6 1.4L14.5 15h-5l-1.6 1.9a2.6 2.6 0 0 1-4.6-1.4L3 12.2A4 4 0 0 1 7 8z"/></svg></div>
+        <h3>Console mode</h3>
+        <p>A full-screen, controller-friendly mode for the couch. Press F11 and play.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ───────── tour ───────── -->
+  <section class="tour" id="tour">
+    <div class="sec-head reveal">
+      <span class="kicker">Take the tour</span>
+      <h2>See it in action.</h2>
+    </div>
+    <div class="tabs reveal" role="tablist">
+      <button class="on" data-shot="home" data-cap="Home: what's new in your games, deals and where you left off.">Home</button>
+      <button data-shot="library" data-cap="Library: every game from every store, with art, playtime and smart collections.">Library</button>
+      <button data-shot="stores" data-cap="Downloads: Steam, Epic and GOG installs, PC Game Pass, EA, Ubisoft and Battle.net.">Downloads</button>
+      <button data-shot="mods" data-cap="Mods: browse Nexus Mods and Thunderstore and install with one click.">Mods</button>
+      <button data-shot="achievements" data-cap="Achievements: progress, rarity and a friends leaderboard.">Achievements</button>
+      <button data-shot="saves" data-cap="Cloud saves: automatic backups with version history for every game.">Cloud saves</button>
+      <button data-shot="media" data-cap="Media: your clips and screenshots, ready to trim and share.">Media</button>
+      <button data-shot="friends" data-cap="Friends: chat, invites, presence and voice parties.">Friends</button>
+      <button data-shot="console" data-cap="Console mode: big-screen, controller-first.">Console</button>
+    </div>
+    <div class="stage reveal">
+      <div class="window big-win">
+        <div class="win-bar"><i></i><i></i><i></i><span>Primal</span></div>
+        <div class="stage-imgs"><img id="tourImg" src="assets/home.jpg" alt="Primal screenshot"></div>
+      </div>
+      <p class="caption" id="tourCap">Home: what's new in your games, deals and where you left off.</p>
+    </div>
+  </section>
+
+  <!-- ───────── engine ───────── -->
+  <section class="engine" id="engine">
+    <div class="engine-copy reveal">
+      <span class="kicker">Built from scratch</span>
+      <h2>The Primal Capture Engine.</h2>
+      <p>Clips and screenshots run on Primal's own native recorder. It captures your screen and encodes video right on your graphics card (NVIDIA NVENC, AMD or Intel), records game audio and your mic, and keeps the replay buffer in memory. You won't feel it while you play.</p>
+      <div class="eng-stats">
+        <div><b>0.14<small>s</small></b><span>to save a clip</span></div>
+        <div><b>0.5<small>%</small></b><span>CPU while recording</span></div>
+        <div><b>0.5<small>MB</small></b><span>engine size</span></div>
+        <div><b>60<small>fps</small></b><span>up to 4K and ultrawide</span></div>
+      </div>
+    </div>
+    <div class="pipeline reveal" aria-label="How the capture engine works">
+      <div class="stage-node"><b>Desktop Duplication</b><small>Grabs frames straight from Windows</small></div>
+      <i class="flow"></i>
+      <div class="stage-node"><b>GPU colour convert</b><small>Scaled and converted on the GPU</small></div>
+      <i class="flow"></i>
+      <div class="stage-node hot"><b>Hardware encoder</b><small>NVENC · AMD VCN · Quick Sync</small></div>
+      <i class="flow"></i>
+      <div class="stage-node"><b>Replay buffer</b><small>In memory, nothing written while you play</small></div>
+      <i class="flow"></i>
+      <div class="stage-node done"><b>Clip.mp4</b><small>Video + game audio + mic</small></div>
+    </div>
+  </section>
+
+  <!-- ───────── faq ───────── -->
+  <section class="faq" id="faq">
+    <div class="sec-head reveal"><span class="kicker">Questions</span><h2>Good to know.</h2></div>
+    <div class="qs">
+      <details class="reveal"><summary>Is Primal free?</summary><p>Yes, completely: no ads, no subscription, no account needed to use the launcher. An account is only for friends, voice parties and cloud saves.</p></details>
+      <details class="reveal"><summary>Do I still need Steam, Epic or the Xbox app?</summary><p>For Steam games, Steam runs quietly in the background because it checks you own the game; you never see its window. Epic and GOG games install and launch without their launchers at all. Xbox, EA, Ubisoft and Battle.net games install through their own apps because those stores license their games, and Primal opens the right page and tracks the install for you.</p></details>
+      <details class="reveal"><summary>Will it get me banned in games with anti-cheat?</summary><p>No. Primal launches anti-cheat games through their own protected launchers, never injects anything into games, and its overlay is a separate window. Mods are blocked by default for online anti-cheat games, with a clear warning.</p></details>
+      <details class="reveal"><summary>Windows says "Windows protected your PC". Is it safe?</summary><p>That message appears for new apps Windows doesn't recognise yet. Click <b>More info → Run anyway</b>. Primal is downloaded from its official GitHub releases and keeps itself up to date from there.</p></details>
+      <details class="reveal"><summary>Does Primal bypass DRM or let me play games I don't own?</summary><p>No. Primal launches and installs games you own, through the stores you bought them from. It never cracks or bypasses ownership checks.</p></details>
+      <details class="reveal"><summary>How do updates work?</summary><p>Primal checks for new versions on its own, downloads them in the background and installs them the next time you restart it. You'll see an "Update ready" button when one is waiting.</p></details>
+    </div>
+  </section>
+
+  <!-- ───────── final cta ───────── -->
+  <section class="final reveal">
+    <img src="assets/icon.png" alt="" class="final-icon">
+    <h2>Your games deserve better.</h2>
+    <p>Download Primal and bring your whole library together in under a minute.</p>
+    <a class="btn btn-xl dl-link" href="https://github.com/nathanhart06-ops/primal-releases/releases/latest">
+      <svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>
+      <span><b>Download for Windows</b><small class="dl-meta">Windows 10 &amp; 11 · 64-bit</small></span>
+    </a>
+  </section>
+</main>
+
+<footer class="foot">
+  <div class="brand"><img src="assets/icon.png" alt=""><span>PRIMAL</span></div>
+  <p>Primal isn't affiliated with Valve, Epic Games, GOG, Microsoft, Electronic Arts, Ubisoft, Blizzard, Riot or Rockstar. Game names and artwork belong to their owners.</p>
+  <nav><a href="https://github.com/nathanhart06-ops/primal-releases/releases">All releases</a><a class="notes-link" href="https://github.com/nathanhart06-ops/primal-releases/releases/latest">What's new</a></nav>
+</footer>
+
+<script src="site.js"></script>
+</body>
+</html>
